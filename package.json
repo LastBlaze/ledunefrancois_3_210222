@@ -1,5 +1,5 @@
 {
-  "name": "ledunefrancois_3_150222",
+  "name": "ledunefrancois_3_210222",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LastBlaze/ledunefrancois_3_150222.git"
+    "url": "git+https://github.com/LastBlaze/ledunefrancois_3_210222.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LastBlaze/ledunefrancois_3_150222/issues"
+    "url": "https://github.com/LastBlaze/ledunefrancois_3_210222/issues"
   },
-  "homepage": "https://github.com/LastBlaze/ledunefrancois_3_150222#readme"
+  "homepage": "https://github.com/LastBlaze/ledunefrancois_3_210222#readme"
 }
