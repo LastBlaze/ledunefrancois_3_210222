@@ -49,10 +49,12 @@ header {
 }
 
 #fonctionnement {
-  padding: 16px;
+  padding: 0px 25px;
+  margin-bottom: 50px;
   counter-reset: steps;
 }
 #fonctionnement h2 {
+  margin-top: 40px;
   margin-bottom: 30px;
 }
 #fonctionnement ol {
@@ -73,7 +75,7 @@ header {
   padding: 30px 40px;
   flex-grow: 1;
   border-radius: 16px;
-  box-shadow: 0px 0px 5px #0000002e;
+  box-shadow: 0px 0px 10px #0000002e;
   cursor: pointer;
 }
 #fonctionnement li::before {
@@ -104,15 +106,15 @@ header {
   background-color: #f6f6f6;
 }
 #restaurants h2 {
-  padding: 0% 70% 0% 0%;
+  padding: 7% 10% 1% 6%;
 }
 #restaurants .restaurants__carte {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
 }
 #restaurants .restaurants__carte .new {
-  border: 1px solid red;
   position: relative;
 }
 #restaurants .restaurants__carte .new::before {
@@ -126,6 +128,7 @@ header {
   place-items: center;
   right: 16px;
   top: 16px;
+  border-radius: 3px;
 }
 #restaurants .carte__restaurant {
   background-color: white;
@@ -134,6 +137,7 @@ header {
   object-fit: cover;
   width: 90%;
   border-radius: 30px;
+  margin-bottom: 20px;
 }
 #restaurants .carte__restaurant .resto {
   border-radius: 30px 30px 0px 0px;
@@ -142,8 +146,58 @@ header {
   object-fit: cover;
 }
 #restaurants .carte__restaurant .nom_restaurant {
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  color: #000000;
+}
+#restaurants .carte__restaurant .nom_restaurant h3 {
+  margin-left: 20px;
+}
+#restaurants .carte__restaurant .nom_restaurant p {
+  margin-left: 20px;
+  margin-top: -15px;
+}
+#restaurants .carte__restaurant .nom_restaurant i {
+  font-size: 25px;
+  position: absolute;
+  right: 25px;
+  top: 0px;
+}
+#restaurants .carte__restaurant .nom_restaurant .fas {
+  color: transparent;
+  background-image: linear-gradient(170deg, #9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+#restaurants .carte__restaurant .nom_restaurant .fas:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+footer {
+  background-color: #363535;
+  padding: 10px 20px;
+  color: white;
+}
+footer h2 {
+  font-family: "Roboto";
+  font-weight: 500;
+}
+footer ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+footer ul a {
+  text-decoration: none;
+  color: white;
+  line-height: 25px;
+}
+footer ul a i {
+  margin-right: 10px;
+}
+footer ul a .fa-handshake-angle {
+  width: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */

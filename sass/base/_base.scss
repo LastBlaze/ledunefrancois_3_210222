@@ -22,10 +22,9 @@ header {
         align-items: center;
         justify-content: center;
     }
-        i {
-            margin-right: 20px;
+    i {
+        margin-right: 20px;
         }
-
     .description__title{
         font-weight: bold;
     }
@@ -50,9 +49,11 @@ header {
 }
 
 #fonctionnement {
-    padding: 16px;
+    padding: 0px 25px;
+    margin-bottom: 50px;
     counter-reset: steps;
     h2 {
+        margin-top: 40px;
         margin-bottom: 30px;
     }
     & ol {
@@ -60,9 +61,9 @@ header {
         padding-left: 15px;
         gap: 16px;
         list-style-type: none;
-        @media (max-width: 1000px) {
+            @media (max-width: 1000px) {
             flex-direction: column;
-        }
+            }
     }
     & li {
         position: relative;
@@ -86,7 +87,7 @@ header {
         padding: 30px 40px;
         flex-grow: 1;
         border-radius: 16px;
-        box-shadow: 0px 0px 5px #0000002e;
+        box-shadow: 0px 0px 10px #0000002e;
         cursor: pointer;
         &:hover {
             transform: scale(1.02);
@@ -101,15 +102,17 @@ header {
 
 #restaurants {
     background-color: #f6f6f6;
-    h2 {
-        padding: 0% 70% 0% 0%;
+
+    & h2 {
+       padding: 7% 10% 1% 6%;
     }
     .restaurants__carte{
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-around;
+        
         .new {
-            border: 1px solid red;
             position: relative;
         }
         .new::before {
@@ -123,15 +126,17 @@ header {
             place-items: center;
             right: 16px;
             top: 16px;
+            border-radius: 3px;
         }
     }
-    .carte__restaurant {
-        background-color: white;
-        box-shadow: 0px 0px 5px #0000002e;
-        text-decoration: none;
-        object-fit: cover;
-        width: 90%;
-        border-radius: 30px;
+        .carte__restaurant {
+            background-color: white;
+            box-shadow: 0px 0px 5px #0000002e;
+            text-decoration: none;
+            object-fit: cover;
+            width: 90%;
+            border-radius: 30px;
+            margin-bottom: 20px;
         & .resto{
             border-radius: 30px 30px 0px 0px;
             height: 200px;
@@ -139,12 +144,59 @@ header {
             object-fit: cover;
         }
          & .nom_restaurant {
-            display: flex;
-            flex-direction: column;
+            position: relative;
+            color: #000000;
+            h3 {
+            margin-left: 20px;
+            }
+            p{
+            margin-left: 20px;
+            margin-top: -15px;
+            }
+            i {
+                font-size: 25px;
+                position: absolute;
+                right: 25px;
+                top: 0px;
+            }
+           .fas {
+                color: transparent;
+                background-image: $gradient-color-hearth;
+                background-clip: text;
+                -webkit-background-clip: text;
+                opacity: 0;
+                transition: all 200ms ease-in-out;
+            }
+            .fas:hover {
+                opacity: 1;
+                transform: scale(1.2) ;
+            }
         }
     }
 }
 
-
-
-
+footer {
+    background-color: rgb(54, 53, 53);
+    padding: 10px 20px;
+    color: white;
+        h2 {
+        font-family: $police-texte;
+        font-weight: 500;
+        }
+        & ul {
+            list-style-type: none;
+            padding-left: 0px;
+            
+        & a {
+            text-decoration: none;
+            color: white;
+            line-height: 25px;
+            & i {  
+                margin-right: 10px;
+            }
+            .fa-handshake-angle {
+                width: 14px;
+            }
+        }
+    }
+}
