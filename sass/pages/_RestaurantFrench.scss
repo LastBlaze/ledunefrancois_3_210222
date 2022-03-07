@@ -1,0 +1,58 @@
+.fa-arrow-left {
+    border: 1px solid red;
+    color: black;
+    top: 20px;
+    left: -50px;
+    font-size: 20pt;
+}
+
+.banner {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+}
+
+
+/*section container*/
+
+.container {
+    background-color: rgb(245, 245, 245);
+}
+
+
+/*titre page + heart */
+
+.title {
+    position: relative;
+    bottom: 0px;
+    display: flex;
+    background-color: white;
+    border-radius: 40px 40px 00;
+    align-items: center;
+    margin: -40px 0 0 0;
+    h1 {
+        font-size: 27pt;
+        margin-left: 35px;
+        font-family: $police-titre;
+    }
+    i {
+        position: absolute;
+        right: 30px;
+        font-size: 40px;
+    }
+    .far {
+        color: black;
+    }
+    .fas {
+        color: transparent;
+        background-image: $gradient-color-hearth;
+        background-clip: text;
+        -webkit-background-clip: text;
+        opacity: 0;
+        transition: all 200ms ease-in-out;
+    }
+    .fas:hover {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
