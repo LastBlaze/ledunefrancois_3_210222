@@ -4,8 +4,8 @@
     border-top: 8px solid $primary-color;
     border-bottom: 8px solid $primary-color;
     border-radius: 80%;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     margin: auto;
     position: absolute;
     top: 0;
@@ -23,8 +23,8 @@
     border-top: 8px solid transparent;
     border-bottom: 8px solid transparent;
     border-radius: 80%;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     margin: auto;
     position: absolute;
     top: 0;
@@ -42,8 +42,8 @@
     border-top: 8px solid $secondary-color;
     border-bottom: 8px solid $secondary-color;
     border-radius: 80%;
-    width: 20px;
-    height: 20px;
+    width: 70px;
+    height: 70px;
     margin: auto;
     position: absolute;
     top: 0;
@@ -53,6 +53,16 @@
     -webkit-animation: spin3 2S linear infinite;
     -o-animation: spin3 2S linear infinite;
     animation: spin3 2S linear infinite;
+    i {
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        margin: 22px;
+        color: $secondary-color;
+        -webkit-animation: spin3 2S linear infinite;
+        -o-animation: spin3 2S linear infinite;
+        animation: spin3 2S linear infinite;
+    }
 }
 
 @-webkit-keyframes spin {

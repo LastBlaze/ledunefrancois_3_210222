@@ -61,8 +61,8 @@ footer ul a .fa-handshake-angle {
   border-top: 8px solid #9356DC;
   border-bottom: 8px solid #9356DC;
   border-radius: 80%;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   margin: auto;
   position: absolute;
   top: 0;
@@ -80,8 +80,8 @@ footer ul a .fa-handshake-angle {
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
   border-radius: 80%;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   margin: auto;
   position: absolute;
   top: 0;
@@ -99,14 +99,24 @@ footer ul a .fa-handshake-angle {
   border-top: 8px solid #FF79DA;
   border-bottom: 8px solid #FF79DA;
   border-radius: 80%;
-  width: 20px;
-  height: 20px;
+  width: 70px;
+  height: 70px;
   margin: auto;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  -webkit-animation: spin3 2S linear infinite;
+  -o-animation: spin3 2S linear infinite;
+  animation: spin3 2S linear infinite;
+}
+.loader3 i {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  margin: 22px;
+  color: #FF79DA;
   -webkit-animation: spin3 2S linear infinite;
   -o-animation: spin3 2S linear infinite;
   animation: spin3 2S linear infinite;
