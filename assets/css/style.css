@@ -55,6 +55,35 @@ footer ul a .fa-handshake-angle {
   opacity: 0.9;
 }
 
+.button_restaurant {
+  margin-top: 50px;
+  margin-bottom: 110px;
+  color: white;
+  font-weight: 300;
+  font-size: 15pt;
+  padding: 16px 50px;
+  border: none;
+  border-radius: 32px;
+  box-shadow: 2px 1px 16px -3px #000000;
+  background: linear-gradient(176deg, #ff79da, #9356dc);
+  cursor: pointer;
+}
+.button_restaurant:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
+.loader {
+  display: flex;
+  background-color: #fafafa;
+  opacity: 0.9;
+  inset: 0;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  animation: load 2000ms forwards;
+}
+
 .loader1 {
   border-right: 8px solid transparent;
   border-left: 8px solid transparent;
@@ -69,8 +98,6 @@ footer ul a .fa-handshake-angle {
   left: 0;
   right: 0;
   bottom: 0;
-  -webkit-animation: spin 2S linear infinite;
-  -o-animation: spin 2S linear infinite;
   animation: spin 2S linear infinite;
 }
 
@@ -88,8 +115,6 @@ footer ul a .fa-handshake-angle {
   left: 0;
   right: 0;
   bottom: 0;
-  -webkit-animation: spin2 2S linear infinite;
-  -o-animation: spin2 2S linear infinite;
   animation: spin2 2S linear infinite;
 }
 
@@ -107,8 +132,6 @@ footer ul a .fa-handshake-angle {
   left: 0;
   right: 0;
   bottom: 0;
-  -webkit-animation: spin3 2S linear infinite;
-  -o-animation: spin3 2S linear infinite;
   animation: spin3 2S linear infinite;
 }
 .loader3 i {
@@ -117,8 +140,6 @@ footer ul a .fa-handshake-angle {
   justify-content: center;
   margin: 22px;
   color: #FF79DA;
-  -webkit-animation: spin3 2S linear infinite;
-  -o-animation: spin3 2S linear infinite;
   animation: spin3 2S linear infinite;
 }
 
@@ -168,6 +189,11 @@ footer ul a .fa-handshake-angle {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes load {
+  100% {
+    visibility: hidden;
   }
 }
 #description {
@@ -349,8 +375,12 @@ footer ul a .fa-handshake-angle {
 }
 
 /*section container*/
-.container {
+#container {
   background-color: whitesmoke;
+}
+#container .buttondiv {
+  display: flex;
+  justify-content: center;
 }
 
 /*titre page + heart */
@@ -361,7 +391,7 @@ footer ul a .fa-handshake-angle {
   background-color: white;
   border-radius: 40px 40px 0;
   align-items: center;
-  margin: -40px 0 0 0;
+  margin: -40px 0 -30px 0;
 }
 .title h1 {
   font-size: 27pt;
@@ -387,6 +417,81 @@ footer ul a .fa-handshake-angle {
 .title .fas:hover {
   opacity: 1;
   transform: scale(1.1);
+}
+
+.menu__entry {
+  margin: 50px 20px 30px 20px;
+}
+.menu__entry .title__dish {
+  width: 90%;
+  font-size: 15pt;
+  margin-left: 15px;
+  font-weight: 300;
+}
+.menu__entry .title_underline {
+  border-bottom: 3.5px solid #99E2D0;
+  padding-bottom: 5px;
+}
+
+/*div bloc + texte*/
+.menu__category {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px 0px gainsboro;
+  display: flex;
+  overflow: hidden;
+  cursor: pointer;
+  font-size: 15pt;
+  text-overflow: ellipsis;
+  margin-top: 20px;
+  line-height: 30px;
+  white-space: nowrap;
+  height: 90px;
+}
+.menu__category .menu__strong {
+  margin: 20px 0 0 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.menu__category .menu__strong .menu__light {
+  font-weight: 200;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+@keyframes check {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+.menu__category .menu__price {
+  margin: 0;
+  margin-left: auto;
+  padding: 50px 25px 0 15px;
+}
+.menu__category .menu__check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99E2D0;
+  width: 80px;
+  margin-right: -80px;
+  transition: margin-right 0.5s;
+  color: white;
+  font-size: 20pt;
+}
+
+.menu__category:hover .menu__check {
+  margin-right: 0;
+}
+
+.menu__category:hover .fas {
+  margin-right: 0;
+  animation: check 1s ease;
 }
 
 /*

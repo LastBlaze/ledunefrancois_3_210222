@@ -16,3 +16,21 @@
         opacity: 0.9;
     }
 }
+
+.button_restaurant {
+    margin-top: 50px;
+    margin-bottom: 110px;
+    color: white;
+    font-weight: 300;
+    font-size: 15pt;
+    padding: 16px 50px;
+    border: none;
+    border-radius: 32px;
+    box-shadow: 2px 1px 16px -3px #000000;
+    background: $gradient-color;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.02);
+        opacity: 0.9;
+    }
+}

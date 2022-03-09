@@ -1,0 +1,117 @@
+.fa-arrow-left {
+    border: 1px solid red;
+    color: black;
+    top: 20px;
+    left: -50px;
+    font-size: 20pt;
+}
+
+.banner {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+}
+
+
+/*section container*/
+
+#container {
+    background-color: rgb(245, 245, 245);
+    .buttondiv {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+/*titre page + heart */
+
+.title {
+    position: relative;
+    bottom: 0px;
+    display: flex;
+    background-color: white;
+    border-radius: 40px 40px 00;
+    align-items: center;
+    margin: -40px 0 -30px 0;
+    h1 {
+        font-size: 27pt;
+        margin-left: 35px;
+        font-family: $police-titre;
+    }
+    i {
+        position: absolute;
+        right: 30px;
+        font-size: 40px;
+    }
+    .far {
+        color: black;
+    }
+    .fas {
+        color: transparent;
+        background-image: $gradient-color-hearth;
+        background-clip: text;
+        -webkit-background-clip: text;
+        opacity: 0;
+        transition: all 200ms ease-in-out;
+    }
+    .fas:hover {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
+
+.menu__entry {
+    margin: 50px 20px 30px 20px;
+    .title__dish {
+        width: 90%;
+        font-size: 15pt;
+        margin-left: 15px;
+        font-weight: 300;
+    }
+    .title_underline {
+        border-bottom: 3.5px solid $tertiary-color;
+        padding-bottom: 5px;
+    }
+}
+
+
+/*div bloc + texte*/
+
+.menu__category {
+    @include carte;
+    height: 90px;
+    @keyframes check {
+        0% {
+            transform: rotate(-270deg);
+        }
+        100% {
+            transform: rotate(0);
+        }
+    }
+    .menu__price {
+        margin: 0;
+        margin-left: auto;
+        padding: 50px 25px 0 15px;
+    }
+    .menu__check {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $tertiary-color;
+        width: 80px;
+        margin-right: -80px;
+        transition: margin-right 0.5s;
+        color: white;
+        font-size: 20pt;
+    }
+}
+
+.menu__category:hover .menu__check {
+    margin-right: 0;
+}
+
+.menu__category:hover .fas {
+    margin-right: 0;
+    animation: check 1s ease;
+}
