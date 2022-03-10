@@ -66,8 +66,11 @@
             transform: scale(1.02);
             opacity: 0.9;
             background-color: #f2eafb;
+            i {
+                color: violet !important;
+            }
         }
-        & i.fas {
+        i.fas {
             margin-right: 30px;
             color: grey;
         }

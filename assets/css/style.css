@@ -269,6 +269,9 @@ footer ul a .fa-handshake-angle {
   opacity: 0.9;
   background-color: #f2eafb;
 }
+#fonctionnement li:hover i {
+  color: violet !important;
+}
 #fonctionnement li i.fas {
   margin-right: 30px;
   color: grey;
