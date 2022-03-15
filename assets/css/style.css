@@ -41,7 +41,7 @@ footer ul a .fa-handshake-angle {
   color: white;
   font-weight: 300;
   font-size: 15pt;
-  padding: 16px;
+  padding: 18px 25px;
   margin-top: 20px;
   margin-bottom: 70px;
   border: none;
@@ -61,7 +61,7 @@ footer ul a .fa-handshake-angle {
   color: white;
   font-weight: 300;
   font-size: 15pt;
-  padding: 16px 50px;
+  padding: 20px 65px;
   border: none;
   border-radius: 32px;
   box-shadow: 2px 1px 16px -3px #000000;
@@ -213,10 +213,10 @@ footer ul a .fa-handshake-angle {
   margin-right: 20px;
 }
 #description .description__title {
-  font-weight: 600;
+  font-weight: 800;
 }
 #description p {
-  font-weight: 400;
+  font-weight: 300;
 }
 
 #fonctionnement {
@@ -241,6 +241,7 @@ footer ul a .fa-handshake-angle {
 }
 #fonctionnement li {
   position: relative;
+  font-size: 14pt;
   font-weight: bolder;
   background-color: #f6f6f6;
   padding: 30px 40px;
@@ -270,7 +271,7 @@ footer ul a .fa-handshake-angle {
   background-color: #f2eafb;
 }
 #fonctionnement li:hover i {
-  color: violet !important;
+  color: #9356DC !important;
 }
 #fonctionnement li i.fas {
   margin-right: 30px;
@@ -332,6 +333,7 @@ footer ul a .fa-handshake-angle {
   margin-left: 20px;
 }
 #restaurants .restaurants__carte_description .restaurants__nomlogo .restaurants__nom p {
+  font-weight: 300;
   margin-left: 20px;
   margin-top: -10px;
 }
@@ -363,11 +365,30 @@ footer ul a .fa-handshake-angle {
   transform: scale(1.1);
 }
 
+@media screen and (min-width: 768px) {
+  .description__title {
+    border: 1px solid red;
+    font-size: 25pt;
+    display: inline;
+  }
+
+  #restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #restaurants h2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: -45px;
+    font-size: 30pt;
+  }
+}
 .fa-arrow-left {
-  border: 1px solid red;
+  position: absolute;
+  left: 20px;
   color: black;
-  top: 20px;
-  left: -50px;
   font-size: 20pt;
 }
 
@@ -398,6 +419,7 @@ footer ul a .fa-handshake-angle {
 }
 .title h1 {
   font-size: 27pt;
+  font-weight: 400;
   margin-left: 35px;
   font-family: "Shrikhand";
 }
@@ -486,6 +508,41 @@ footer ul a .fa-handshake-angle {
   transition: margin-right 0.5s;
   color: white;
   font-size: 20pt;
+}
+
+.menu__strong {
+  font-size: 20pt;
+}
+
+.menu__light {
+  font-size: 16pt;
+}
+
+.poulet {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px 0px gainsboro;
+  display: flex;
+  overflow: hidden;
+  cursor: pointer;
+  font-size: 15pt;
+  text-overflow: ellipsis;
+  margin-top: 20px;
+  line-height: 30px;
+  white-space: nowrap;
+  height: 120px;
+}
+.poulet .menu__strong {
+  margin: 20px 0 0 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.poulet .menu__strong .menu__light {
+  font-weight: 200;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .menu__category:hover .menu__check {
