@@ -9,15 +9,19 @@
             align-items: center;
             justify-content: center;
             font-weight: 500;
+            margin-bottom: 50px;
         }
         i {
             margin-right: 20px;
         }
         .description__title {
+            margin: 0px 90px;
             font-weight: 800;
+            font-size: 20pt;
         }
         p {
             font-weight: 300;
+            font-size: 17pt;
         }
     }
     
@@ -155,7 +159,7 @@
                     background-clip: text;
                     -webkit-background-clip: text;
                     opacity: 0;
-                    transition: all 200ms ease-in-out;
+                    transition: all 400ms ease-in-out;
                 }
                 .fas:hover {
                     opacity: 1;
@@ -167,20 +171,56 @@
     
     @media screen and (min-width: 768px) {
         .description__title {
-            border: 1px solid red;
             font-size: 25pt;
-            display: inline;
         }
-        #restaurants {
+
+        #fonctionnement {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+            flex-direction: column;
+            justify-content: center;
+            h2 {
+                font-size: 28pt;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            .fonctionnemnt__choice {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            ol {
+                padding: 0px;
+                max-width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    min-width: 260px;
+                    max-width: 260px;
+                    margin: 0 15px;
+                 }
+            }
+        }
+
+        #restaurants {
             h2 {
                 display: flex;
                 justify-content: center;
                 width: 100%;
                 margin-top: -45px;
                 font-size: 30pt;
+                padding-left: 0px;
+            }
+            .restaurants__carte {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 100%;
+                .restaurants__carte_description {
+                    width: 45%;
+                   
+                }
             }
         }
     }

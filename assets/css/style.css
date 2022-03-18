@@ -1,3 +1,21 @@
+@keyframes check {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes appear {
+  0% {
+    transform: translatey(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translatey(0);
+    opacity: 1;
+  }
+}
 body {
   margin: 0px;
   font-family: "Roboto";
@@ -208,15 +226,19 @@ footer ul a .fa-handshake-angle {
   align-items: center;
   justify-content: center;
   font-weight: 500;
+  margin-bottom: 50px;
 }
 #description i {
   margin-right: 20px;
 }
 #description .description__title {
+  margin: 0px 90px;
   font-weight: 800;
+  font-size: 20pt;
 }
 #description p {
   font-weight: 300;
+  font-size: 17pt;
 }
 
 #fonctionnement {
@@ -358,7 +380,7 @@ footer ul a .fa-handshake-angle {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
-  transition: all 200ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 #restaurants .restaurants__carte_description .restaurants__nomlogo .fas:hover {
   opacity: 1;
@@ -367,22 +389,54 @@ footer ul a .fa-handshake-angle {
 
 @media screen and (min-width: 768px) {
   .description__title {
-    border: 1px solid red;
     font-size: 25pt;
-    display: inline;
   }
 
-  #restaurants {
+  #fonctionnement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #fonctionnement h2 {
+    font-size: 28pt;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #fonctionnement .fonctionnemnt__choice {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #fonctionnement ol {
+    padding: 0px;
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
   }
+  #fonctionnement ol li {
+    min-width: 260px;
+    max-width: 260px;
+    margin: 0 15px;
+  }
+
   #restaurants h2 {
     display: flex;
     justify-content: center;
     width: 100%;
     margin-top: -45px;
     font-size: 30pt;
+    padding-left: 0px;
+  }
+  #restaurants .restaurants__carte {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  #restaurants .restaurants__carte .restaurants__carte_description {
+    width: 45%;
   }
 }
 .fa-arrow-left {
@@ -417,7 +471,7 @@ footer ul a .fa-handshake-angle {
   align-items: center;
   margin: -40px 0 -30px 0;
 }
-.title h1 {
+.title h2 {
   font-size: 27pt;
   font-weight: 400;
   margin-left: 35px;
@@ -472,6 +526,7 @@ footer ul a .fa-handshake-angle {
   line-height: 30px;
   white-space: nowrap;
   height: 90px;
+  animation: appear 3s;
 }
 .menu__category .menu__strong {
   margin: 20px 0 0 10px;
@@ -485,13 +540,17 @@ footer ul a .fa-handshake-angle {
   overflow: hidden;
   white-space: nowrap;
 }
-@keyframes check {
-  0% {
-    transform: rotate(-270deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
+.menu__category:nth-child(1) {
+  animation-delay: 100ms;
+}
+.menu__category:nth-child(2) {
+  animation-delay: 100ms;
+}
+.menu__category:nth-child(3) {
+  animation-delay: 100ms;
+}
+.menu__category:nth-child(4) {
+  animation-delay: 100ms;
 }
 .menu__category .menu__price {
   margin: 0;
@@ -509,13 +568,20 @@ footer ul a .fa-handshake-angle {
   color: white;
   font-size: 20pt;
 }
+.menu__category:hover .menu__check {
+  margin-right: 0;
+}
+.menu__category:hover .iconecheck {
+  margin-right: 0;
+  animation: check 1s ease;
+}
 
 .menu__strong {
-  font-size: 20pt;
+  font-size: 17.5pt;
 }
 
 .menu__light {
-  font-size: 16pt;
+  font-size: 14.5pt;
 }
 
 .poulet {
@@ -545,15 +611,12 @@ footer ul a .fa-handshake-angle {
   white-space: nowrap;
 }
 
-.menu__category:hover .menu__check {
-  margin-right: 0;
-}
-
-.menu__category:hover .fas {
-  margin-right: 0;
-  animation: check 1s ease;
-}
-
+/*.entry {
+    border: 1px solid red;
+    margin-top: 16px;
+    opacity: 1;
+    animation: choix 1s ease;
+}*/
 /*
 
 ORDRE D'IMPORTATION

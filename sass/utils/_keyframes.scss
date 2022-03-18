@@ -1,0 +1,19 @@
+@keyframes check {
+    0% {
+        transform: rotate(-270deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+@keyframes appear {
+    0% {
+        transform: translatey(50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translatey(0);
+        opacity: 1;
+    }
+}

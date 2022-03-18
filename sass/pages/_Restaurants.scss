@@ -33,7 +33,7 @@
     border-radius: 40px 40px 00;
     align-items: center;
     margin: -40px 0 -30px 0;
-    h1 {
+    h2 {
         font-size: 27pt;
         font-weight: 400;
         margin-left: 35px;
@@ -77,18 +77,15 @@
 
 
 /*div bloc + texte*/
-
 .menu__category {
     @include carte;
     height: 90px;
-    @keyframes check {
-        0% {
-            transform: rotate(-270deg);
-        }
-        100% {
-            transform: rotate(0);
-        }
-    }
+    @for $i from 1 through 4 {
+        &:nth-child(#{$i}) {
+            animation-delay: 100ms;
+          }
+    } 
+    animation: appear 3s;
     .menu__price {
         margin: 0;
         margin-left: auto;
@@ -105,14 +102,23 @@
         color: white;
         font-size: 20pt;
     }
+    &:hover{
+        .menu__check{
+            margin-right: 0;
+        }
+        .iconecheck{
+            margin-right: 0;
+            animation: check 1s ease;
+        }
+    }
 }
 
 .menu__strong {
-    font-size: 20pt;
+    font-size: 17.5pt;
 }
 
 .menu__light {
-    font-size: 16pt;
+    font-size: 14.5pt;
 }
 
 .poulet {
@@ -120,11 +126,10 @@
     height: 120px;
 }
 
-.menu__category:hover .menu__check {
-    margin-right: 0;
-}
+/*.entry {
+    border: 1px solid red;
+    margin-top: 16px;
+    opacity: 1;
+    animation: choix 1s ease;
+}*/
 
-.menu__category:hover .fas {
-    margin-right: 0;
-    animation: check 1s ease;
-}
