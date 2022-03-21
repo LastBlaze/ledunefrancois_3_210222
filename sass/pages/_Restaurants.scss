@@ -29,12 +29,10 @@
     position: relative;
     bottom: 0px;
     display: flex;
-    background-color: white;
     border-radius: 40px 40px 00;
     align-items: center;
-    margin: -40px 0 -30px 0;
     h2 {
-        font-size: 27pt;
+        font-size: 25pt;
         font-weight: 400;
         margin-left: 35px;
         font-family: $police-titre;
@@ -77,14 +75,15 @@
 
 
 /*div bloc + texte*/
+
 .menu__category {
     @include carte;
     height: 90px;
     @for $i from 1 through 4 {
         &:nth-child(#{$i}) {
             animation-delay: 100ms;
-          }
-    } 
+        }
+    }
     animation: appear 3s;
     .menu__price {
         margin: 0;
@@ -102,11 +101,11 @@
         color: white;
         font-size: 20pt;
     }
-    &:hover{
-        .menu__check{
+    &:hover {
+        .menu__check {
             margin-right: 0;
         }
-        .iconecheck{
+        .iconecheck {
             margin-right: 0;
             animation: check 1s ease;
         }
@@ -126,10 +125,10 @@
     height: 120px;
 }
 
+
 /*.entry {
     border: 1px solid red;
     margin-top: 16px;
     opacity: 1;
     animation: choix 1s ease;
 }*/
-
