@@ -467,11 +467,14 @@ footer ul a .fa-handshake-angle {
 
 /*titre page + heart */
 .title {
+  background-color: whitesmoke;
   position: relative;
   bottom: 0px;
   display: flex;
   border-radius: 40px 40px 0;
   align-items: center;
+  margin-top: -37px;
+  margin-bottom: -30px;
 }
 .title h2 {
   font-size: 25pt;

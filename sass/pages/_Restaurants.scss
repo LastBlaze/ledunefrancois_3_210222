@@ -26,11 +26,15 @@
 /*titre page + heart */
 
 .title {
+    background-color: rgb(245, 245, 245);
     position: relative;
     bottom: 0px;
     display: flex;
     border-radius: 40px 40px 00;
     align-items: center;
+    margin-top: -37px;
+    margin-bottom: -30px;
+    
     h2 {
         font-size: 25pt;
         font-weight: 400;
